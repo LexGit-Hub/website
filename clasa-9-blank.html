@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clasa a 9-a</title>
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="styles/dark-mode.css" id="dark-mode-style">
+</head>
+<body>
+    <header>
+        <div class="top-right-buttons">
+            <button id="home-button" onclick="navigateToHomePage()">Home</button>
+            <button id="mode-switch">Light Mode</button>
+        </div>
+    </header>
+    <main>
+        <div class="main-content">
+            <div class="main-box">Matematica</div>
+            <div class="main-box">Romana</div>
+            <div class="main-box">Fizica</div>
+        </div>
+    </main>
+    <script>
+        function navigateToHomePage() {
+            window.location.href = 'index.html';
+        }
+
+        document.getElementById('mode-switch').addEventListener('click', function() {
+            const darkModeStyle = document.getElementById('dark-mode-style');
+            if (darkModeStyle.disabled) {
+                darkModeStyle.disabled = false;
+                this.textContent = 'Light Mode';
+            } else {
+                darkModeStyle.disabled = true;
+                this.textContent = 'Dark Mode';
+            }
+        });
+    </script>
+</body>
+</html>

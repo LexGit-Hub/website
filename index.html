@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>10LaBAC</title>
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="styles/dark-mode.css" id="dark-mode-style">
+</head>
+
+<body>
+    <header>
+        <div class="top-right-buttons">
+            <button id="about-button">About</button>
+            <button id="account-button">Account</button>
+            <button id="mode-switch">Light Mode</button>
+        </div>
+    </header>
+    <main>
+        <div class="main-content">
+            <div class="main-box" id="clasa-9-box" onclick="navigateToBlankPage('clasa-9')">Clasa a 9-a</div>
+            <div class="main-box" id="clasa-10-box" onclick="navigateToBlankPage('clasa-10')">Clasa a 10-a</div>
+            <div class="main-box" id="clasa-11-box" onclick="navigateToBlankPage('clasa-11')">Clasa a 11-a</div>
+            <div class="main-box" id="clasa-12-box" onclick="navigateToBlankPage('clasa-12')">Clasa a 12-a</div>
+        </div>
+    </main>
+    <div id="background-formulas"></div>
+    <script src="scripts/app.js"></script>
+    <script src="scripts/cursor-effect.js"></script>
+    <script src="scripts/formulas.js"></script>
+    <script>
+        function navigateToBlankPage(clasa) {
+            window.location.href = clasa + '-blank.html';
+        }
+
+        document.getElementById('mode-switch').addEventListener('click', function() {
+            const darkModeStyle = document.getElementById('dark-mode-style');
+            if (darkModeStyle.disabled) {
+                darkModeStyle.disabled = false;
+                this.textContent = 'Light Mode';
+            } else {
+                darkModeStyle.disabled = true;
+                this.textContent = 'Dark Mode';
+            }
+        });
+    </script>
+</body>
+</html>
