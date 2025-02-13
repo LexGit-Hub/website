@@ -1,0 +1,30 @@
+body{
+    background-color: rgb(36, 40, 90);
+    }
+
+.container{
+    position: absolute;/* first 4 lines center the container*/
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 10px;/* makes it not pointy*/
+    width: 80%;
+    height: 30%;
+    display: flex;
+    }
+    .box1{
+        display: flex;/* for some known reason these 3 lines center text*/
+        justify-content: center;
+        align-items: center;
+        margin-left: 10px;
+        height: 100%;
+        width: 100%;
+        background-color: rgb(75, 83, 185);
+        border-radius: 10px;
+        cursor: pointer;
+        }
+
+.menu{
+cursor: pointer;
+
+}
