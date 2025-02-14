@@ -28,11 +28,11 @@ body{
 
 @media  (max-width: 600px){
     .container{
-
+        top: 45%;
         display: grid;
         }
         .box1{
-
+            
             margin-top: 10px;
             height: 90%;
 
