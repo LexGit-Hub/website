@@ -28,7 +28,7 @@ body{
 cursor: pointer;
 
 }
-@media (max-width: 600px){
+@media (max-width: 60px){
       .box1{
         align-items: center;
         margin-left: 10px;
