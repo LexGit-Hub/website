@@ -24,8 +24,16 @@ body{
         cursor: pointer;
         }
 
-.menu{
-cursor: pointer;
+@media screen and (max-width: 600px){
+    .container{
+
+        display: grid;
+        }
+        .box1{
+
+            margin-top: 10px;
+            height: 90%;
+
+    }
 
 }
-
