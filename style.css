@@ -24,7 +24,7 @@ body{
         cursor: pointer;
         }
 
-@media screen and (max-width: 600px){
+@media  (max-width: 600px){
     .container{
 
         display: grid;
@@ -37,3 +37,30 @@ body{
     }
 
 }
+@media  (max-width: 600px){
+    .container{
+
+        display: grid;
+        }
+        .box1{
+
+            margin-top: 10px;
+            height: 90%;
+
+    }
+
+}
+@media  (max-width: 600px),(max-width: 320px),(max-width: 480px),(max-width: 801px){
+    .container{
+
+        display: grid;
+        }
+        .box1{
+
+            margin-top: 10px;
+            height: 90%;
+
+    }
+
+}
+
