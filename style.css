@@ -1,6 +1,13 @@
 body{
-    background-color: rgb(36, 40, 90);
+    background-color: rgb(30, 30, 30);
+    color: white;
     }
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
 .container{
     position: absolute;/* first 4 lines center the container*/
@@ -11,6 +18,7 @@ body{
     width: 80%;
     height: 30%;
     display: flex;
+    user-select: none;
     }
     .box1{
         display: flex;/* for some known reason these 3 lines center text*/
@@ -19,7 +27,7 @@ body{
         margin-left: 10px;
         height: 100%;
         width: 100%;
-        background-color: rgb(75, 83, 185);
+        background-color: rgb(60, 60, 60);
         border-radius: 10px;
         cursor: pointer;
         }
@@ -32,11 +40,44 @@ body{
         display: grid;
         }
         .box1{
-            
             margin-top: 10px;
             height: 90%;
 
     }
+}
+
+
+nav{
+    height: 5vh;
+    background-color: rgb(44, 44, 44);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    user-select: none;
+}
+.links{
+	margin: 2%;
+	width: 30vh;
+	display: flex;
+	justify-content: space-between;
+	cursor: pointer;
+}
+.logo{
+	margin: 2%;
+}
+
+.menu{
 
 }
 
+.home{
+
+
+}
+.clasa{
+
+}*/
+.lightmode{
+    position: relative;
+}
+  
