@@ -2,6 +2,10 @@ body{
     background-color: rgb(30, 30, 30);
     color: white;
     }
+body.light-mode{
+    background-color: rgb(249, 249, 249);
+    color: #f3f4f6;
+}
 
 * {
   margin: 0;
@@ -31,8 +35,10 @@ body{
         border-radius: 10px;
         cursor: pointer;
         }
+body.light-mode .box1{
 
-
+background-color: #1f2937;
+}
 
 @media  (max-width: 600px){
     .container{
@@ -55,29 +61,33 @@ nav{
     align-items: center;
     user-select: none;
 }
+nav.light-mode{
+background-color: #1f2937;
+}
 .links{
 	margin: 2%;
 	width: 30vh;
 	display: flex;
 	justify-content: space-between;
-	cursor: pointer;
 }
 .logo{
 	margin: 2%;
+	user-select: none;
+        cursor: pointer;
+        
 }
 
-.menu{
-
+.cursuri{
+	user-select: none;
+	cursor: pointer;
 }
 
 .home{
-
-
+	user-select: none;
+	cursor: pointer;
 }
-.clasa{
-
-}*/
-.lightmode{
-    position: relative;
+.light-mode{
+	user-select: none;
+	cursor: pointer;
 }
   
