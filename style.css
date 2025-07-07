@@ -23,14 +23,12 @@ body.light-mode{
     height: 30%;
     display: flex;
     user-select: none;
-    background-color: black;
     justify-content: space-between;
     }
     .box1{
         display: flex;/* for some known reason these 3 lines center text*/
         justify-content: center;
         align-items: center;
-	
         height: 100%;
         width: 32%;
         background-color: rgb(60, 60, 60);
@@ -45,12 +43,13 @@ background-color: #1f2937;
 @media  (max-width: 600px){
     .container{
         top: 45%;
-        display: grid;
-	justify-content: center;
+        display: block;
+	justify-content: space-between;
         }
         .box1{
-            height: 90%;
-	    width:400px;
+	    margin-bottom: 10px;
+            height: 32%;
+	    width: 100%;
 
     }
 }
